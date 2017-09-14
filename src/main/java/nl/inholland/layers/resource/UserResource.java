@@ -5,6 +5,8 @@
  */
 package nl.inholland.layers.resource;
 
+import javax.inject.Inject;
+
 /**
  *
  * @author MacBook
