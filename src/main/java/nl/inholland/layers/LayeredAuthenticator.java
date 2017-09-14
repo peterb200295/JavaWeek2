@@ -8,9 +8,4 @@ import io.dropwizard.auth.basic.BasicCredentials;
 
 public class LayeredAuthenticator implements Authenticator<BasicCredentials, User>
 {
-    @Override
-    public Optional<User> authenticate(BasicCredentials credentials) throws AuthenticationException
-    {
-
-    }
 }
