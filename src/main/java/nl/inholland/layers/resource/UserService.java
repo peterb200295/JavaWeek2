@@ -5,10 +5,17 @@
  */
 package nl.inholland.layers.resource;
 
+import java.util.List;
+import nl.inholland.layers.model.User;
+
 /**
  *
  * @author Peter
  */
 public class UserService {
+
+    List<User> getAll() {
+        throw new UnsupportedOperationException("Coming soon."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

@@ -5,7 +5,11 @@
  */
 package nl.inholland.layers.resource;
 
+import java.util.List;
 import javax.inject.Inject;
+import javax.ws.rs.GET;
+import nl.inholland.layers.model.User;
+import nl.inholland.layers.presentation.model.UserView;
 
 /**
  *
@@ -19,5 +23,12 @@ public class UserResource extends BaseResource{
     public UserResource(UserService userService, UserPresenter userPresenter){
         this.userService = userService;
         this.userPresenter = userPresenter;
+    }
+    
+    @GET
+    public List < UserView > getAll(){
+        List<User> users = userService.getAll();
+        
+        return userPresenter.present(users);
     }
 }
