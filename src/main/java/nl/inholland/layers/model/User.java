@@ -1,33 +1,42 @@
-   package nl.inholland.layers.model;
+package nl.inholland.layers.model;
 
 import java.security.Principal;
 
-public class User implements Principal
+public class User extends EntityModel implements Principal
 {
-    private String name = "";
+    private String name;
     
-    private String password = "";
+    private String password;
     
-    public User(String name, String password)
+    private boolean married;
+
+    public String getName()
     {
-        this.name = name;
-        this.password = password;
+        return name;
     }
 
-    @Override
-    public String getName() {
-        return this.name;
-    }
-    
-    public void setName(String name) {
+    public void setName( String name )
+    {
         this.name = name;
     }
-    
-    public String getPassword() {
+
+    public String getPassword()
+    {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword( String password )
+    {
         this.password = password;
+    }
+
+    public boolean isMarried()
+    {
+        return married;
+    }
+
+    public void setMarried( boolean married )
+    {
+        this.married = married;
     }
 }

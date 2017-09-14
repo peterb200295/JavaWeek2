@@ -11,20 +11,6 @@ public class LayeredAuthenticator implements Authenticator<BasicCredentials, Use
     @Override
     public Optional<User> authenticate(BasicCredentials credentials) throws AuthenticationException
     {
-        User user = new User(credentials.getUsername(), credentials.getPassword());
-        
-        User userFromDB = new User("nelleke", "test");
-        
-        if (!user.getName().equals(userFromDB.getName()))
-        {
-            return Optional.empty();
-        }
-        
-        if (user.getPassword().equals(userFromDB.getPassword()))
-        {
-            return Optional.of(user);
-        }
-        
-        return Optional.empty();
+
     }
 }
