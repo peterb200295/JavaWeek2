@@ -9,6 +9,13 @@ package nl.inholland.layers.resource;
  *
  * @author MacBook
  */
-public class UserResource {
+public class UserResource extends BaseResource{
+    private final UserService userService;
+    private final UserPresenter userPresenter;
     
+    @Inject
+    public UserResource(UserService userService, UserPresenter userPresenter){
+        this.userService = userService;
+        this.userPresenter = userPresenter;
+    }
 }

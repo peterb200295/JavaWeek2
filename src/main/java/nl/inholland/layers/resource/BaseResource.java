@@ -5,10 +5,9 @@
  */
 package nl.inholland.layers.resource;
 
-/**
- *
- * @author MacBook
- */
+import javax.inject.Singleton;
+
+@Singleton
 public class BaseResource {
     
 }

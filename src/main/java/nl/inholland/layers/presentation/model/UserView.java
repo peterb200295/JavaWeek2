@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package nl.inholland.layers.presentation.model;
 
-/**
- *
- * @author MacBook
- */
-public class UserView {
-    
+public class UserView
+{
+    public String id;
+    public String name;
+    public boolean married;
 }
